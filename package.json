@@ -18,7 +18,8 @@
   },
   "files": [
     "index.js",
-    "bin/"
+    "bin/",
+    "LICENSE"
   ],
   "scripts": {
     "start": "node bin/cli.js"
