@@ -6,6 +6,7 @@
 [![downloads count](https://img.shields.io/npm/dt/ethereum-wallet-generator.svg)](https://www.npmjs.com/package/ethereum-wallet-generator)
 [![size](https://packagephobia.com/badge?p=ethereum-wallet-generator)](https://packagephobia.com/result?p=ethereum-wallet-generator)
 [![license](https://img.shields.io/npm/l/ethereum-wallet-generator.svg)](https://piecioshka.mit-license.org)
+[![github-ci](https://github.com/piecioshka/ethereum-wallet-generator/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/ethereum-wallet-generator/actions/workflows/testing.yml)
 
 A simple Node.js tool to generate Ethereum blockchain wallets with address, private key, and mnemonic phrase.
 
@@ -43,16 +44,16 @@ eth-wallet --version
 
 ### ⚙️ CLI Options
 
-| Option | Alias | Description |
-|--------|-------|-------------|
-| `--help` | `-h` | Show help message |
-| `--version` | `-v` | Show version number |
-| `--json` | `-j` | Output wallet data as JSON |
+| Option      | Alias | Description                |
+| ----------- | ----- | -------------------------- |
+| `--help`    | `-h`  | Show help message          |
+| `--version` | `-v`  | Show version number        |
+| `--json`    | `-j`  | Output wallet data as JSON |
 
 ### 📚 Programmatic Usage
 
 ```javascript
-import { generateWallet, displayWallet } from 'ethereum-wallet-generator';
+import { generateWallet, displayWallet } from "ethereum-wallet-generator";
 
 const wallet = generateWallet();
 console.log(wallet.address);
@@ -64,6 +65,7 @@ displayWallet(wallet);
 ```
 
 The tool will output:
+
 - 📍 **Address**: Your Ethereum wallet address (public)
 - 🔑 **Private Key**: Your wallet's private key (keep secret!)
 - 📝 **Mnemonic Phrase**: 24-word recovery phrase (keep secret!)
@@ -102,14 +104,11 @@ phrase secure. Never share them with anyone!
 ## 🔧 How It Works
 
 The tool uses the ethers.js library to:
+
 1. 🎲 Generate 256-bit cryptographically secure entropy
 2. 📝 Create a BIP-39 24-word mnemonic phrase from the entropy
 3. 🔐 Derive the wallet (address and private key) from the mnemonic phrase
 
 ## 📄 License
-
-[The MIT License](https://piecioshka.mit-license.org) @ 2026
-
-## License
 
 [The MIT License](https://piecioshka.mit-license.org) @ 2026

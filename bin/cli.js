@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
+import { createRequire } from "node:module";
 import { generateWallet, displayWallet } from "../index.js";
+
+const pkg = createRequire(import.meta.url)("../package.json");
 
 const args = process.argv.slice(2);
 
@@ -26,7 +29,7 @@ Examples:
 }
 
 function printVersion() {
-  console.log("ethereum-wallet-generator v1.0.0");
+  console.log(`${pkg.name} v${pkg.version}`);
 }
 
 function main() {
