@@ -13,7 +13,7 @@ const showVersion = args.includes("--version") || args.includes("-v");
 
 function printHelp() {
   console.log(`
-Usage: ethereum-wallet-generator [options]
+Usage: ${pkg.name} [options]
 
 Generate a new Ethereum wallet with address, private key, and mnemonic phrase.
 
@@ -23,8 +23,8 @@ Options:
   -j, --json     Output wallet data as JSON
 
 Examples:
-  ethereum-wallet-generator           Generate wallet with formatted output
-  ethereum-wallet-generator --json    Generate wallet with JSON output
+  ${pkg.name}           Generate wallet with formatted output
+  ${pkg.name} --json    Generate wallet with JSON output
 `);
 }
 

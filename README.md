@@ -1,12 +1,12 @@
-# 💎 Ethereum Wallet Generator
+# 💎 generate-ethereum-wallet
 
-[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/ethereum-wallet-generator)
-[![node version](https://img.shields.io/node/v/ethereum-wallet-generator.svg)](https://www.npmjs.com/package/ethereum-wallet-generator)
-[![npm version](https://badge.fury.io/js/ethereum-wallet-generator.svg)](https://badge.fury.io/js/ethereum-wallet-generator)
-[![downloads count](https://img.shields.io/npm/dt/ethereum-wallet-generator.svg)](https://www.npmjs.com/package/ethereum-wallet-generator)
-[![size](https://packagephobia.com/badge?p=ethereum-wallet-generator)](https://packagephobia.com/result?p=ethereum-wallet-generator)
-[![license](https://img.shields.io/npm/l/ethereum-wallet-generator.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/ethereum-wallet-generator/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/ethereum-wallet-generator/actions/workflows/testing.yml)
+[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/generate-ethereum-wallet)
+[![node version](https://img.shields.io/node/v/generate-ethereum-wallet.svg)](https://www.npmjs.com/package/generate-ethereum-wallet)
+[![npm version](https://badge.fury.io/js/generate-ethereum-wallet.svg)](https://badge.fury.io/js/generate-ethereum-wallet)
+[![downloads count](https://img.shields.io/npm/dt/generate-ethereum-wallet.svg)](https://www.npmjs.com/package/generate-ethereum-wallet)
+[![size](https://packagephobia.com/badge?p=generate-ethereum-wallet)](https://packagephobia.com/result?p=generate-ethereum-wallet)
+[![license](https://img.shields.io/npm/l/generate-ethereum-wallet.svg)](https://piecioshka.mit-license.org)
+[![github-ci](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/testing.yml)
 
 A simple Node.js tool to generate Ethereum blockchain wallets with address, private key, and mnemonic phrase.
 
@@ -20,14 +20,14 @@ A simple Node.js tool to generate Ethereum blockchain wallets with address, priv
 ## 📥 Installation
 
 ```bash
-npm install -g ethereum-wallet-generator
+npm install -g generate-ethereum-wallet
 ```
 
 ## 🚀 Usage
 
 ```bash
 # Generate a new wallet
-ethereum-wallet-generator
+generate-ethereum-wallet
 
 # Or use the short alias
 eth-wallet
@@ -53,7 +53,7 @@ eth-wallet --version
 ### 📚 Programmatic Usage
 
 ```javascript
-import { generateWallet, displayWallet } from "ethereum-wallet-generator";
+import { generateWallet, displayWallet } from "generate-ethereum-wallet";
 
 const wallet = generateWallet();
 console.log(wallet.address);

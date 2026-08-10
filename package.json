@@ -1,5 +1,5 @@
 {
-  "name": "ethereum-wallet-generator",
+  "name": "generate-ethereum-wallet",
   "version": "0.1.0",
   "description": "A CLI tool to generate Ethereum blockchain wallets with address, private key, and 24-word mnemonic phrase",
   "main": "index.js",
@@ -39,10 +39,6 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "bin": {
-    "ethereum-wallet-generator": "bin/cli.js",
-    "eth-wallet": "bin/cli.js"
-  },
   "files": [
     "index.js",
     "bin/",
@@ -77,10 +73,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piecioshka/ethereum-wallet-generator.git"
+    "url": "git+https://github.com/piecioshka/generate-ethereum-wallet.git"
   },
   "bugs": {
-    "url": "https://github.com/piecioshka/ethereum-wallet-generator/issues"
+    "url": "https://github.com/piecioshka/generate-ethereum-wallet/issues"
   },
-  "homepage": "https://github.com/piecioshka/ethereum-wallet-generator#readme"
+  "homepage": "https://github.com/piecioshka/generate-ethereum-wallet#readme",
+  "bin": {
+    "generate-ethereum-wallet": "bin/cli.js",
+    "eth-wallet": "bin/cli.js"
+  }
 }
