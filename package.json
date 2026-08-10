@@ -1,6 +1,6 @@
 {
   "name": "generate-ethereum-wallet",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A CLI tool to generate Ethereum blockchain wallets with address, private key, and 24-word mnemonic phrase",
   "main": "index.js",
   "type": "module",
