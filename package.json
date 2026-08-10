@@ -4,13 +4,31 @@
   "description": "A CLI tool to generate Ethereum blockchain wallets with address, private key, and 24-word mnemonic phrase",
   "main": "index.js",
   "type": "module",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "license": "MIT",
   "exports": {
     ".": {
       "import": "./index.js"
     }
   },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node bin/cli.js --json > /dev/null && node bin/cli.js --version && node bin/cli.js --help > /dev/null"
+  },
   "dependencies": {
     "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "bin": {
     "ethereum-wallet-generator": "bin/cli.js",
@@ -23,12 +41,6 @@
     "LICENSE",
     "README.md"
   ],
-  "scripts": {
-    "start": "node bin/cli.js",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test": "node bin/cli.js --json > /dev/null && node bin/cli.js --version && node bin/cli.js --help > /dev/null"
-  },
   "keywords": [
     "ethereum",
     "wallet",
@@ -44,12 +56,6 @@
     "generator",
     "cli"
   ],
-  "author": {
-    "name": "Piotr Kowalski",
-    "email": "piecioshka@gmail.com",
-    "url": "https://piecioshka.pl/"
-  },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/piecioshka/ethereum-wallet-generator.git"
@@ -57,11 +63,5 @@
   "bugs": {
     "url": "https://github.com/piecioshka/ethereum-wallet-generator/issues"
   },
-  "homepage": "https://github.com/piecioshka/ethereum-wallet-generator#readme",
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "devDependencies": {
-    "prettier": "^3.9.6"
-  }
+  "homepage": "https://github.com/piecioshka/ethereum-wallet-generator#readme"
 }
