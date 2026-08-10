@@ -1,15 +1,14 @@
-import { Wallet, Mnemonic, randomBytes } from "ethers";
+import { HDNodeWallet, Mnemonic, randomBytes } from "ethers";
 
 export function generateWallet() {
-  // Generate 256-bit entropy for 24-word mnemonic (128-bit = 12 words, 256-bit = 24 words)
-  const entropy = randomBytes(32); // 32 bytes = 256 bits
-  const mnemonic = Mnemonic.fromEntropy(entropy);
-  const wallet = Wallet.fromPhrase(mnemonic.phrase);
+  // 32 bytes = 256-bit entropy = 24-word mnemonic
+  const mnemonic = Mnemonic.fromEntropy(randomBytes(32));
+  const wallet = HDNodeWallet.fromMnemonic(mnemonic);
 
   return {
     address: wallet.address,
     privateKey: wallet.privateKey,
-    mnemonic: wallet.mnemonic.phrase,
+    mnemonic: mnemonic.phrase,
   };
 }
 

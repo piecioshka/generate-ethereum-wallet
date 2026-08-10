@@ -4,14 +4,9 @@ import { createRequire } from "node:module";
 import { generateWallet, displayWallet } from "../index.js";
 
 const pkg = createRequire(import.meta.url)("../package.json");
-
 const args = process.argv.slice(2);
 
-const showHelp = args.includes("--help") || args.includes("-h");
-const jsonOutput = args.includes("--json") || args.includes("-j");
-const showVersion = args.includes("--version") || args.includes("-v");
-
-function printHelp() {
+if (args.includes("--help") || args.includes("-h")) {
   console.log(`
 Usage: ${pkg.name} [options]
 
@@ -26,30 +21,14 @@ Examples:
   ${pkg.name}           Generate wallet with formatted output
   ${pkg.name} --json    Generate wallet with JSON output
 `);
-}
-
-function printVersion() {
+} else if (args.includes("--version") || args.includes("-v")) {
   console.log(`${pkg.name} v${pkg.version}`);
-}
-
-function main() {
-  if (showHelp) {
-    printHelp();
-    process.exit(0);
-  }
-
-  if (showVersion) {
-    printVersion();
-    process.exit(0);
-  }
-
+} else {
   const walletInfo = generateWallet();
 
-  if (jsonOutput) {
+  if (args.includes("--json") || args.includes("-j")) {
     console.log(JSON.stringify(walletInfo, null, 2));
   } else {
     displayWallet(walletInfo);
   }
 }
-
-main();
