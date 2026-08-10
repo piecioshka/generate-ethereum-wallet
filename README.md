@@ -1,6 +1,6 @@
 # 💎 generate-ethereum-wallet
 
-[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/generate-ethereum-wallet)
+![cli-available](https://badgen.net/static/cli/available/?icon=terminal)
 [![node version](https://img.shields.io/node/v/generate-ethereum-wallet.svg)](https://www.npmjs.com/package/generate-ethereum-wallet)
 [![npm version](https://badge.fury.io/js/generate-ethereum-wallet.svg)](https://badge.fury.io/js/generate-ethereum-wallet)
 [![downloads count](https://img.shields.io/npm/dt/generate-ethereum-wallet.svg)](https://www.npmjs.com/package/generate-ethereum-wallet)
