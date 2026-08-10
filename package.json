@@ -10,8 +10,10 @@
     "url": "https://piecioshka.pl/"
   },
   "license": "MIT",
+  "types": "types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./types/index.d.ts",
       "import": "./index.js"
     }
   },
@@ -19,12 +21,19 @@
     "start": "node bin/cli.js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "node bin/cli.js --json > /dev/null && node bin/cli.js --version && node bin/cli.js --help > /dev/null"
+    "test": "node bin/cli.js --json > /dev/null && node bin/cli.js --version && node bin/cli.js --help > /dev/null",
+    "lint": "eslint .",
+    "prepare": "husky"
   },
   "dependencies": {
     "ethers": "^6.13.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
     "prettier": "^3.9.6"
   },
   "engines": {
@@ -37,10 +46,20 @@
   "files": [
     "index.js",
     "bin/",
+    "types/",
     "package.json",
     "LICENSE",
     "README.md"
   ],
+  "lint-staged": {
+    "*.{js,mjs}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md,yml,ts}": [
+      "prettier --write"
+    ]
+  },
   "keywords": [
     "ethereum",
     "wallet",
