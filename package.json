@@ -1,6 +1,6 @@
 {
   "name": "ethereum-wallet-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A CLI tool to generate Ethereum blockchain wallets with address, private key, and 24-word mnemonic phrase",
   "main": "index.js",
   "type": "module",
@@ -19,10 +19,15 @@
   "files": [
     "index.js",
     "bin/",
-    "LICENSE"
+    "package.json",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
-    "start": "node bin/cli.js"
+    "start": "node bin/cli.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node bin/cli.js --json > /dev/null && node bin/cli.js --version && node bin/cli.js --help > /dev/null"
   },
   "keywords": [
     "ethereum",
@@ -39,7 +44,11 @@
     "generator",
     "cli"
   ],
-  "author": "piecioshka",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -51,5 +60,8 @@
   "homepage": "https://github.com/piecioshka/ethereum-wallet-generator#readme",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
   }
 }
