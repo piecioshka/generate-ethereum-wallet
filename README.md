@@ -6,7 +6,7 @@
 [![downloads count](https://img.shields.io/npm/dt/generate-ethereum-wallet.svg)](https://www.npmjs.com/package/generate-ethereum-wallet)
 [![size](https://packagephobia.com/badge?p=generate-ethereum-wallet)](https://packagephobia.com/result?p=generate-ethereum-wallet)
 [![license](https://img.shields.io/npm/l/generate-ethereum-wallet.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/generate-ethereum-wallet/actions/workflows/ci.yml)
 
 A simple Node.js tool to generate Ethereum blockchain wallets with address, private key, and mnemonic phrase.
 
