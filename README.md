@@ -53,7 +53,7 @@ eth-wallet --version
 ### 📚 Programmatic Usage
 
 ```javascript
-import { generateWallet, displayWallet } from 'generate-ethereum-wallet';
+import { generateWallet, displayWallet } from "generate-ethereum-wallet";
 
 const wallet = generateWallet();
 console.log(wallet.address);
