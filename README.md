@@ -53,7 +53,7 @@ eth-wallet --version
 ### 📚 Programmatic Usage
 
 ```javascript
-import { generateWallet, displayWallet } from "generate-ethereum-wallet";
+import { generateWallet, displayWallet } from 'generate-ethereum-wallet';
 
 const wallet = generateWallet();
 console.log(wallet.address);
@@ -108,6 +108,10 @@ The tool uses the ethers.js library to:
 1. 🎲 Generate 256-bit cryptographically secure entropy
 2. 📝 Create a BIP-39 24-word mnemonic phrase from the entropy
 3. 🔐 Derive the wallet (address and private key) from the mnemonic phrase
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📄 License
 
