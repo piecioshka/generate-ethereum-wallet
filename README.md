@@ -10,6 +10,8 @@
 
 A simple Node.js tool to generate Ethereum blockchain wallets with address, private key, and mnemonic phrase.
 
+![generate-ethereum-wallet - generated wallet](docs/screenshots/wallet.png)
+
 ## ✨ Features
 
 - 🔐 Generate secure Ethereum wallets
